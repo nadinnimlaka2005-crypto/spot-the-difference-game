@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.image-wrapper {
+  position: relative;
+}
+
+.image {
+  width: 300px;
+  max-width: 90vw;
+  border: 2px solid #333;
+}
+
+.spot {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.spot.found {
+  border: 3px solid red;
+  pointer-events: none;
+}
+
+#counter {
+  font-size: 18px;
+  margin-top: 10px;
+}
